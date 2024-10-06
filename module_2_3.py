@@ -7,5 +7,8 @@ while len(my_list) > a:
         a = a + 1
         continue
     else:
-        a = a + 1
+        if my_list[a] < 0:
+            break
+        else:
+            a = a + 1
         continue
