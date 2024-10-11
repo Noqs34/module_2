@@ -1,7 +1,6 @@
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 prime = []
 not_prime = []
-is_prime = False
 for i in numbers:
     if i == 1:
         continue
@@ -11,14 +10,9 @@ for i in numbers:
         if i == j:
             break
         elif x == 0:
-            is_prime = False
             not_prime.append(y)
             break
-        else:
-            is_prime = True
-        continue
     else:
-        is_prime = True
         prime.append(i)
 print('Prime:' ,prime)
 print('Not_prime:' ,not_prime)
