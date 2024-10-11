@@ -23,4 +23,3 @@ for i in numbers:
         continue
 print('Prime:' ,prime)
 print('Not_prime:' ,not_prime)
-
