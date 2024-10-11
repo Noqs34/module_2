@@ -9,7 +9,7 @@ for i in numbers:
         prime.append(i)
     elif i == 1:
         continue
-    for j in range(2 , y):
+    for j in range(2 , i):
         y = i
         x = i % j
         if i == j:
