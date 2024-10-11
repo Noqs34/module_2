@@ -5,12 +5,11 @@ for i in numbers:
     if i == 1:
         continue
     for j in range(2 , i):
-        y = i
         x = i % j
         if i == j:
             break
         elif x == 0:
-            not_prime.append(y)
+            not_prime.append(i)
             break
     else:
         prime.append(i)
