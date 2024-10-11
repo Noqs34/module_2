@@ -3,14 +3,12 @@ prime = []
 not_prime = []
 is_prime = False
 for i in numbers:
-    y = i - 1
     if is_prime == True:
         prime.append(y)
     elif i == 2:
         prime.append(i)
     elif i == 1:
         continue
-    y = i + 1
     for j in range(2 , y):
         y = i
         x = i % j
