@@ -3,11 +3,7 @@ prime = []
 not_prime = []
 is_prime = False
 for i in numbers:
-    if is_prime == True:
-        prime.append(y)
-    elif i == 2:
-        prime.append(i)
-    elif i == 1:
+    if i == 1:
         continue
     for j in range(2 , i):
         y = i
@@ -21,5 +17,8 @@ for i in numbers:
         else:
             is_prime = True
         continue
+    else:
+        is_prime = True
+        prime.append(i)
 print('Prime:' ,prime)
 print('Not_prime:' ,not_prime)
