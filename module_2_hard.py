@@ -3,12 +3,8 @@ import math
 n = int(input('Введите число от 3 до 20: '))
 a = math.ceil(n / 2)
 result = []
-for i in range(a):
-    if i == 0:
-        continue
-    for j in range(n):
-        if j == 0:
-            continue
+for i in range(1, a):
+    for j in range(1, n):
         if j <= i:
             continue
         x = n % (i + j)
